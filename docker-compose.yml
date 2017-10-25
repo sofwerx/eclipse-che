@@ -2,14 +2,14 @@ version: '3'
 
 services:
 
-  starter:
+  launcher:
     image: eclipse/che
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock 
       - ./user:/data
     network_mode: host
-    container_name: web
-    hostname: web
+    container_name: launcher
+    hostname: launcher
     restart: always
     command: start --follow
     logging:
