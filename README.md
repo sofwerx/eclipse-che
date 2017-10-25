@@ -29,3 +29,6 @@ You can now interact with Che by clicking on the following URL:
 
 - http://localhost:8080
 
+# Further reading
+
+https://www.eclipse.org/che/docs/setup/getting-started/
