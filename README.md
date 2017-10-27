@@ -1,13 +1,23 @@
 # eclipse-che
 
-This is a management harness for an eclipse-che environment.
+This is a management harness for a docker based [eclipse-che](https://www.eclipse.org/che/) environment.
 
-# Usage:
+# Docker:
 
 Install `docker` and `docker-compose` for your development workstation following the Docker documentation.
 
 - https://docs.docker.com/engine/installation/
 - https://docs.docker.com/compose/install/
+
+`docker-engine` is the thing running inside a linux host OS.
+
+- On Windows, you need hyper-v to run a Linux VM, which does not come with Home Edition.
+- On Mac, it will use xhyve which is built-in and free.
+- On Linux, it will install a `docker-engine` natively on your linux host OS, so no VM will be required.
+
+`docker-compose` is a command-line tool for managing a group of containers with a `docker-compose.yml` file in your projects.
+
+# Usage:
 
 Clone this repo and run `docker-compose up` in the repo directory to start using che:
 
@@ -28,7 +38,7 @@ This will also automagically restart when you reboot your computer.
 
 The che web service should be listening on your docker-engine host on port 8080.
 
-You can now interact with Che by clicking on the following URL:
+You should now be able to interact with Che by clicking on the following URL:
 
 - http://localhost:8080
 
