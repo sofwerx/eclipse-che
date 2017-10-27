@@ -2,12 +2,19 @@
 
 This is a management harness for a docker based [eclipse-che](https://www.eclipse.org/che/) environment.
 
-# Docker:
+# Install Docker
 
-Install `docker` and `docker-compose` for your development workstation following the Docker documentation.
+Install `docker` and `docker-compose` for your development workstation following the Docker CE (Community Edition) documentation.
 
 - https://docs.docker.com/engine/installation/
 - https://docs.docker.com/compose/install/
+
+Alternatively, if your organization is ok with it, you might instead use:
+
+- [chocolatey.org](https://chocolatey.org) : `choco install docker`
+- [brew.sh](https://brew.sh) : `brew install docker`
+
+## What are these things?
 
 `docker-engine` is the thing running inside a linux host OS.
 
@@ -17,7 +24,7 @@ Install `docker` and `docker-compose` for your development workstation following
 
 `docker-compose` is a command-line tool for managing a group of containers with a `docker-compose.yml` file in your projects.
 
-# Usage:
+# Che Usage:
 
 Clone this repo and run `docker-compose up` in the repo directory to start using che:
 
