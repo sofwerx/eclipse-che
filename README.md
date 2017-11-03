@@ -11,8 +11,34 @@ Install `docker` and `docker-compose` for your development workstation following
 
 Alternatively, if your organization is ok with it, you might instead use:
 
-- [chocolatey.org](https://chocolatey.org) : `choco install docker`
-- [brew.sh](https://brew.sh) : `brew install docker`
+- Mac: [brew.sh](https://brew.sh) : `brew install docker`
+- Windows: [chocolatey.org](https://chocolatey.org) : `choco install docker`
+
+# Install Git
+
+## Mac `git`
+
+Mac comes with a `git` command-line client built-in.
+
+You _can_ also install git from HomeBrew, but it is not required:
+
+- [brew.sh](https://brew.sh): `brew install git`
+
+## Windows `git`
+
+If you're on Windows 10 build 1607+, it is strongly suggested that you install the Windows Subsystem for Linux:
+
+- https://msdn.microsoft.com/en-us/commandline/wsl/about
+- https://msdn.microsoft.com/en-us/commandline/wsl/install-win10
+
+Select "Ubuntu", and follow the instructions until you get to a `bash$` prompt, then install `git` with `apt`:
+
+    apt-get update
+    apt-get install git
+
+Alternatively, if your organization is ok with it, you might instead use:
+
+- [chocolatey.org](https://chocolattey.org): `choco install git`
 
 ## What are these things?
 
@@ -22,7 +48,9 @@ Alternatively, if your organization is ok with it, you might instead use:
 - On Mac, it will use xhyve which is built-in and free.
 - On Linux, it will install a `docker-engine` natively on your linux host OS, so no VM will be required.
 
-`docker-compose` is a command-line tool for managing a group of containers with a `docker-compose.yml` file in your projects.
+The `docker` command-line tool is merely a client that talks to a `docker-engine` or compatible API.
+
+Likewise, `docker-compose` is a command-line client tool for managing a group of containers with a `docker-compose.yml` file in your projects.
 
 # Che Usage:
 
