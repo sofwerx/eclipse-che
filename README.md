@@ -79,6 +79,14 @@ You should now be able to interact with Che by clicking on the following URL:
 
 # Windows Note:
 
+Docker for Windows requires 64bit Windows 10 Pro with Hyper-V available.
+
+Make sure you have Hyper-V enabled before installing Docker for Windows.
+
+After installing docker, you may (or may not) run into a problem where your account is not in the "docker-users" group.
+At least one installation had this problem. Adding the user account to the "docker-users" group in Computer management fixed it.
+- https://github.com/docker/for-win/issues/868
+
 Linux and Mac docker-engines use the standard unix domain socket path of `/var/run/docker.sock`
 
 Linux and Mac docker and docker-compose also presume the default:
